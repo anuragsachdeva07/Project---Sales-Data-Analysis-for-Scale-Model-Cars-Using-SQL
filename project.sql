@@ -1,12 +1,12 @@
 -- Relational tables in this database are linked through the following common attributes.
 /* products and orderdetails tables are linked through the common attribute "productCode".
-     products and productlines tables are linked through the common attribute "productLine".
-     orders and orderdetails tables are linked through the common attribute "orderNumber".
-      customers and orders tables are linked through the common attribute "customerNumber".
-      customers and payments tables are linked through the common attribute "customerNumber".
-	  customers and employees tables are linked through the common attributes "employeeNumber" or " salesRepEmployeeNumber".
-	  employees  table  self reference the table  table itself for attributes "employeeNumber" and "reportsTo".
-	  employees and offices tables are linked through the common attribute "officeCode".*/
+   products and productlines tables are linked through the common attribute "productLine".
+   orders and orderdetails tables are linked through the common attribute "orderNumber".
+   customers and orders tables are linked through the common attribute "customerNumber".
+   customers and payments tables are linked through the common attribute "customerNumber".
+   customers and employees tables are linked through the common attributes "employeeNumber" or " salesRepEmployeeNumber".
+   employees  table  self reference the table  table itself for attributes "employeeNumber" and "reportsTo".
+   employees and offices tables are linked through the common attribute "officeCode".*/
 SELECT "Customers" AS table_name, 
 (SELECT COUNT(*) 
 FROM pragma_table_info('customers')) AS number_of_attributes,
