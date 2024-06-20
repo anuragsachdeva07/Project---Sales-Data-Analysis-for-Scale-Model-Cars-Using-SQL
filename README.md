@@ -27,3 +27,5 @@ Japan
 With the exception of the Japanese group, each group has a sales manager and a team of sales reps. The Japanese team consists of two sales representatives.
 
 The structure of the company is graphically depicted in figure 1.
+![image](https://github.com/anuragsachdeva07/Project---Sales-Data-Analysis-for-Scale-Model-Cars-Using-SQL/assets/173383566/50fb12c4-707f-4991-9ce6-72f9ea735641)
+
