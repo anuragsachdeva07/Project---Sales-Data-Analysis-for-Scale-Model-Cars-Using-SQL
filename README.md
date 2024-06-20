@@ -1,5 +1,4 @@
 # Analyzing Model Vehicle Sales
-Jack Kolberg-Edelbrock, PhD
 
 ## Executive Summary
 Our client is a wholesaler that sells scale-model vehicles to businesses. Using both SQL and Python techniques, I investigated several aspects of the company's operations. Important findings include:
