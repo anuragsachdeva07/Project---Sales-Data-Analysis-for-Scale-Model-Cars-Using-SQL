@@ -1,29 +1,4 @@
-/*Scale Model Cars Database contains 8 tables which are 
-products,productlines,orders,orderdetails,customers,payments,employees and offices.*/
 
--- Each table contains the following information.
-/*
-    Customers: customer data
-   Employees: all employee information
-    Offices: sales office information
-    Orders: customers' sales orders
-    OrderDetails: sales order line for each sales order
-    Payments: customers' payment records
-    Products: a list of scale model cars
-    ProductLines: a list of product line categories */
-	
--- Relational tables in this database are linked through the following common attributes.
-/* products and orderdetails tables are linked through the common attribute "productCode".
-     products and productlines tables are linked through the common attribute "productLine".
-     orders and orderdetails tables are linked through the common attribute "orderNumber".
-      customers and orders tables are linked through the common attribute "customerNumber".
-      customers and payments tables are linked through the common attribute "customerNumber".
-	  customers and employees tables are linked through the common attributes "employeeNumber" or " salesRepEmployeeNumber".
-	  employees  table  self reference the table  table itself for attributes "employeeNumber" and "reportsTo".
-	  employees and offices tables are linked through the common attribute "officeCode".*/
-	  
-	-- Code for Table Description is as follows;
-	
 SELECT "Customers" AS table_name, 
 (SELECT COUNT(*) 
 FROM pragma_table_info('customers')) AS number_of_attributes,
